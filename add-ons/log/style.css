@@ -1,0 +1,60 @@
+/*
+ xiaozhitiao style by Cookie_bedrock
+*/
+body {
+	background: #fff;
+	margin:0;
+	padding:0;
+	font-family: "Microsoft YaHei", 微软雅黑
+}
+.title {
+	width: 100%;
+	float: left;
+}
+.zhitiao_on {
+	width: 100%;
+	padding:4px 0;
+	float: left;
+	background:#f1f1f1;
+}
+.zhitiao_down {
+	width: 100%;
+	float: left;
+	padding:4px 0;
+	background:#fff;
+}
+.set_zhitiao {
+	width: 1000px;
+	margin: auto;
+	padding-bottom:0px;
+	clear: both;
+}
+
+h1 {
+	color: #333; 
+	font-size: 2.5em;
+	font-weight: 100;
+	margin: 20px 0 5px 0;
+	text-align:left;
+}
+h3 {
+	color: #333;
+	font-size: 1.4em;
+	font-weight: 400;
+	margin: 1.1em 0 1em 0;
+	text-align: left;
+}
+h4 {
+	color: #666;
+	font-size: 1.0em;
+	font-weight: 100;
+	margin:0px 0 40px 0;
+	text-align: left;
+}
+h5 {
+	color: #666;
+	font-size: 1.1em;
+	font-weight: 100;
+	margin: 1.50em 0 1em 0;
+	text-align: left;
+}

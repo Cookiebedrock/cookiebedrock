@@ -1,0 +1,64 @@
+<!--
+#################################
+(ノ≧∀≦)ノBlogVersion:beta2.15
+╓                              ╖
+　あぱぱぱぱぱぱぱぱぱぱ．．．
+   做的不好见谅，本人能力有限
+ 开源在Github，需要参考请自取
+（这么丑不会有人用吧）
+ —
+ 关于Cookie_bedrock这个名字
+ 自己随便起的，当时非常沉迷MC
+ 所以挑了几个物品名字组合下
+ 还是这个比较好，然后就用了
+ (；´д｀)ゞ不过现在想换个名字了
+ 叫着不顺口(｡•́︿•̀｡)
+ —
+ 这只小饼干正在起新的名字
+ 欢迎投稿，一经采纳，你将获得2
+ 块钱哦(｀・ω・´)
+╙                              ╜
+#################################
+-->
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <title>Cookie_bedrock|一只咸饼干的记事本</title>
+	 <link rel='Shortcut Icon' type='image/x-icon' href='favicon.png'>
+</head>
+<body>
+    <h1></h1>
+</body>
+<script type="text/javascript">
+    function browserRedirect() {
+
+        var sUserAgent= navigator.userAgent.toLowerCase();
+
+        var bIsIpad= sUserAgent.match(/ipad/i) == "ipad";//ipid
+
+        var bIsIphoneOs= sUserAgent.match(/iphone os/i) == "iphone os";//safari
+
+        var bIsMidp= sUserAgent.match(/midp/i) == "midp";//Mobile Information Device Profile
+
+        var bIsUc7= sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+
+        var bIsUc= sUserAgent.match(/ucweb/i) == "ucweb";//ucExplorer
+
+        var bIsAndroid= sUserAgent.match(/android/i) == "android";//android
+
+        var bIsCE= sUserAgent.match(/windows ce/i) == "windows ce";//winpid
+
+        var bIsWM= sUserAgent.match(/windows mobile/i) == "windows mobile";//winphone
+
+        if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+            window.location.href= 'article/index.html';//手机版
+        } else {
+            window.location.href= 'add-ons/loading/index.html';//电脑版
+        }
+
+    }
+
+    browserRedirect();
+</script>
+</html>
