@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--
+#################################
+(ノ≧∀≦)ノBlogVersion:beta2.15
+╓                              ╖
+　あぱぱぱぱぱぱぱぱぱぱ．．．
+   做的不好见谅，本人能力有限
+ 开源在Github，需要参考请自取
+（这么丑不会有人用吧）
+ —
+ 关于Cookie_bedrock这个名字
+ 自己随便起的，当时非常沉迷MC
+ 所以挑了几个物品名字组合下
+ 还是这个比较好，然后就用了
+ (；´д｀)ゞ不过现在想换个名字了
+ 叫着不顺口(｡•́︿•̀｡)
+ —
+ 这只小饼干正在起新的名字
+ 欢迎投稿，一经采纳，你将获得2
+ 块钱哦(｀・ω・´)
+╙                              ╜
+#################################
+-->
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <title>Cookie_bedrock blog system</title>
+    <link rel='Shortcut Icon' type='image/x-icon' href='favicon.png'>
+    <script type="text/javascript" src="article/assets/index/js/jquery-2.2.4.min.js"></script>
+    <link href="article/assets/index/css/animate.css" rel="stylesheet">
+    <script type="text/javascript" src="article/assets/index/component/layer-v3.0.3/layer/layer.js"></script>
+    <link rel="stylesheet" href="article/assets/index/component/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="article/assets/index/css/default.css" rel="stylesheet">
+    <script type="text/javascript" src="article/assets/index/js/win10.js"></script>
+    <style>
+        * {
+            font-family: "Microsoft YaHei", 微软雅黑, "MicrosoftJhengHei", 华文细黑, STHeiti, MingLiu
+        }
+        /*磁贴自定义样式*/
+        .win10-block-content-text {
+            line-height: 44px;
+            text-align: center;
+            font-size: 16px;
+        }
+    </style>
+    <script>
+        Win10.onReady(function () {
+
+            //设置壁纸
+            Win10.setBgUrl({
+                main:'article/assets/index/img/wallpapers/bg-pickup.jpg',
+                mobile:'article/assets/index/img/wallpapers/mobile.jpg',
+            });
+
+            Win10.setAnimated([
+                'animated flip',
+                'animated bounceIn',
+            ], 0.01);
+			
+			//setTimeout(function () {
+            //    Win10.openUrl('//win10ui.yuri2.cn/src/broadcast.html','</i>广告位',[['300px', '380px'],'rt'])
+            //},2000);
+			
+            setTimeout(function () {
+                Win10.newMsg('主题更新了！', '欢迎回来（づ￣3￣）づ╭❤～')
+            }, 2500);
+			
+            setTimeout(function () {
+                Win10.newMsg('加群提醒', '欢迎dalao们加群：<a target="_blank" href="https://jq.qq.com/?_wv=1027&k=4Er0u8i">Cookie_bedrock－if{ACGfans}</a>')
+            }, 2500);
+
+			
+        });
+    </script>
+</head>
+<body>
+<div id="win10">
+    <div class="desktop">
+        <div id="win10-shortcuts" class="shortcuts-hidden">
+            <div class="shortcut" onclick="Win10.openUrl('./article/index.html','<img class=\'icon\' src=\'article/assets/index/img/icon/doc.png\'/>文章')">
+                <img class="icon" src="article/assets/index/img/icon/bili_socialize_docx.png"/>
+                <div class="title">文章</div>
+            </div>
+            <div class="shortcut" onclick="Win10.openUrl('./links/index.html','<img class=\'icon\' src=\'article/assets/index/img/icon/bili_socialize_copy.png\'/>是朋友哦~')">
+                <img class="icon" src="article/assets/index/img/icon/bili_socialize_copy.png"/>
+                <div class="title">友链</div>
+            </div>
+            <!--<div class="shortcut" onclick="Win10.openUrl('win10ui.yuri2.cn/src/doc.php','<img class=\'icon\' src=\'article/assets/index/img/icon/bili_socialize_generic.png\'/>哈，一堆垃圾(/ω＼)')">
+                <img class="icon" src="article/assets/index/img/icon/bili_socialize_generic.png"/>
+                <div class="title">项目</div>
+            </div>-->
+		    <div class="shortcut" onclick="window.open('https://github.com/Cookiebedrock')">
+                <img class="icon" src="article/assets/index/img/icon/github.png"/>
+                <div class="title">Github</div>
+            </div>
+            <div class="shortcut" onclick="Win10.openUrl('https://www.oschina.net/','<img class=\'icon\' src=\'article/assets/index/img/icon/net.oschina.app.png\'/>开源中国')">
+                <img class="icon" src="article/assets/index/img/icon/net.oschina.app.png"/>
+                <div class="title">开源中国</div>
+            </div>
+            <div class="shortcut" onclick="Win10.openUrl('https://space.bilibili.com/96938904/#/','<img class=\'icon\' src=\'article/assets/index/img/icon/tv.danmaku.bili.png\'/>哔哩哔哩-(゜-゜)つロ乾杯~')">
+                <img class="icon" src="article/assets/index/img/icon/tv.danmaku.bili.png"/>
+                <div class="title">BiliBili</div>
+            </div>
+            <div class="shortcut" onclick="Win10.openUrl('https://weibo.com/6065666409','<img class=\'icon\' src=\'article/assets/index/img/icon/bili_socialize_sina.png\'/>我的微博')">
+                <img class="icon" src="article/assets/index/img/icon/bili_socialize_sina.png"/>
+                <div class="title">微博</div>
+            </div>
+			<div class="shortcut" onclick="Win10.openUrl('./article/mail.html','<img class=\'icon\' src=\'article/assets/index/img/icon/ic_im_unfollow.png\'/>写封信吧ヾ(๑╹◡╹)ﾉ')">
+                <img class="icon" src="article/assets/index/img/icon/ic_im_unfollow.png"/>
+                <div class="title">给我写信</div>
+            </div>
+        </div>
+        <div id="win10-desktop-scene"></div>
+    </div>
+    <div id="win10-menu" class="hidden">
+        <div class="list win10-menu-hidden animated animated-slideOutLeft">
+            <div class="item"><i class="red icon fa fa-wrench fa-fw"></i><span>功能（辣[子]鸡）</span></div>
+            <div class="sub-item" onclick="Win10.openUrl('./oldindex.html','Cookie_bedrockの记事簿')">旧版首页</div>
+            <div class="sub-item" onclick="Win10.commandCenterOpen()">打开消息中心</div>
+            <div class="sub-item" onclick="Win10.newMsg('(ノ≧∀≦)ノ','现在又加了个属性：吃货(点我)',function() {alert('(⊙_⊙)?')})">小秘密⁄(⁄⁄•⁄ω⁄•⁄⁄)⁄</div>
+<!--            <div class="item" ><i class="blue icon fa fa-gavel fa-fw"></i>系统工具</div>
+            <div class="sub-item" onclick="Win10.openUrl('win10ui.yuri2.cn/src/tools/builder-shortcut.html','图标代码生成器')">桌面图标代码生成器</div>
+            <div class="sub-item" onclick="Win10.openUrl('win10ui.yuri2.cn/src/tools/builder-tile.html','磁贴代码生成器')">磁贴代码生成器</div>
+            <div class="sub-item" onclick="Win10.openUrl('win10ui.yuri2.cn/src/tools/builder-menu.html','菜单代码生成器')">菜单代码生成器</div>-->
+            <div class="item" onclick="Win10.aboutUs()"><i class="purple icon fa fa-info-circle fa-fw"></i>关于这个猪蹄（主题）</div>
+            <div class="item" onclick="layer.open({
+                title:'求硬币٩(๑>◡<๑)۶ ',
+                type: 1,
+                area:'300px',
+                offset:'50px',
+                shadeClose:true,
+                content: '<img width=\'300\' src=\'article/assets/index/img/presentation/donation.jpg\' />'
+            })"><i class="green icon fa fa-thumbs-up fa-fw"></i>求硬币买饭</div>
+            <div class="item" onclick=" Win10.exit();"><i class="black icon fa fa-power-off fa-fw"></i>关机ಠ╭╮ಠ</div>
+        </div>
+		
+        <div id="win10-menu-switcher"></div>
+    </div>
+    <div id="win10_command_center" class="hidden_right">
+        <div class="title">
+            <h4 style="float: left">全部消息</h4>
+            <span id="win10_btn_command_center_clean_all">全部清除[X]</span>
+        </div>
+        <div class="msgs"></div>
+    </div>
+    <div id="win10_task_bar">
+        <div id="win10_btn_group_left" class="btn_group">
+            <div id="win10_btn_win" class="btn"><span class="fa fa-google"></span></div>
+        </div>
+        <div id="win10_btn_group_middle" class="btn_group"></div>
+        <div id="win10_btn_group_right" class="btn_group">
+            <div class="btn" id="win10_btn_time">
+                <!--1970/1/1-->
+				<!--0:00<br/>-->
+            </div>
+            <div class="btn" id="win10_btn_command"><span id="win10-msg-nof" class="fa fa-comment-o"></span></div>
+            <div class="btn" id="win10_btn_show_desktop"></div>
+        </div>
+    </div>
+				<audio autoplay="autoplay">
+				<source src="ding.mp3" audio/mp3 "></source></audio>
+</div>
+</body>
+</html>
